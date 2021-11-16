@@ -22,7 +22,7 @@ namespace COMSpike
 
             Console.WriteLine($"IsOpen: {_port.IsOpen}");
 
-            Console.WriteLine("Writing 'Reboot' to _port...");
+            Console.WriteLine("Writing 'Reboot' to port...");
             _port.Write("Reboot");
 
             Thread.Sleep(1000);
@@ -32,7 +32,7 @@ namespace COMSpike
 
         private void Close()
         {
-            Console.WriteLine("Closing _port...");
+            Console.WriteLine("Closing port...");
             _port.Close();
         }
 
@@ -43,7 +43,7 @@ namespace COMSpike
 
         private void Port_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            // Show all the incoming data in the _port's buffer
+            // Show all the incoming data in the port's buffer
             Console.WriteLine($"Data Received: {_port.ReadExisting()}");
         }
     }
