@@ -1,11 +1,10 @@
 ﻿using System;
-using System.IO.Ports;
 
 namespace COMSpike
 {
     namespace SerialPortExample
     {
-        public class Program
+        public static class Program
         {
             private static void Main(string[] args)
             {
